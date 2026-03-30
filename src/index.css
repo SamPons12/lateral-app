@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@import "@fontsource-variable/syne";
+@import "@fontsource-variable/inter";
+
+@theme {
+  --font-heading: "Syne Variable", system-ui, sans-serif;
+  --font-body: "Inter Variable", system-ui, sans-serif;
+  --color-dark: #07070a;
+  --color-dark-light: #0d0d14;
+  --color-dark-card: #111119;
+  --color-dark-border: #1a1a2e;
+  --color-accent: #a855f7;
+  --color-accent-hot: #ec4899;
+  --color-accent-cyan: #06b6d4;
+  --color-glow: rgba(168, 85, 247, 0.15);
+  --color-glow-hot: rgba(236, 72, 153, 0.15);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-dark-border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
+
+::selection {
+  background: rgba(168, 85, 247, 0.3);
+  color: white;
+}
