@@ -210,13 +210,14 @@ function HeroSection() {
         />
       </div>
 
-      <motion.div className="relative z-10 text-center px-6 max-w-4xl" style={{ opacity }}>
+      <motion.div className="relative z-10 text-center flex flex-col max-w-4xl" style={{ opacity }}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm mb-8"
+          className="flex justify-center  items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm mb-8"
         >
+          
           <MapPin size={14} className="text-accent" />
           <span className="text-xs tracking-[0.25em] uppercase text-white/70">
             Ciutadella de Menorca
@@ -227,9 +228,9 @@ function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="font-heading text-7xl md:text-9xl font-extrabold tracking-[0.15em] mb-6"
+          className="font-heading text-center text-5xl md:text-7xl lg:text-9xl font-extrabold mb-6"
         >
-          <span className="text-shimmer">LATERAL</span>
+          LATERAL
         </motion.h1>
 
         <motion.p
