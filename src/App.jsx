@@ -187,7 +187,7 @@ function HeroSection() {
 
   return (
     <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
-      <motion.div className="absolute inset-0 z-0" style={{ y, scale }}>
+      <div className="absolute inset-0 z-0" style={{ y, scale }}>
         <img
           src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=1920&q=80"
           alt=""
@@ -195,7 +195,7 @@ function HeroSection() {
         />
         <div className="absolute inset-0 bg-linear-to-b from-dark/60 via-dark/40 to-dark" />
         <div className="absolute inset-0 bg-linear-to-r from-accent/10 via-transparent to-accent-hot/10" />
-      </motion.div>
+      </div>
 
       <div className="absolute inset-0 z-1 overflow-hidden pointer-events-none" aria-hidden="true">
         <motion.div
